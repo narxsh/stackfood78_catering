@@ -42,6 +42,19 @@ class FilterViewWidget extends StatelessWidget {
                 ),
               ),
             ),
+
+            // added by naresh for catering filter on 17-10-24
+            PopupMenuItem(
+              value: 'catering',
+              child: Text(
+                "Catering",
+                style: robotoMedium.copyWith(
+                  color: restaurant.restaurantType == 'catering' ? Theme.of(context).textTheme.bodyLarge!.color : Theme.of(context).disabledColor,
+                ),
+              ),
+            ),
+            // closed
+
             PopupMenuItem(
               value: 'latest',
               child: Text(
